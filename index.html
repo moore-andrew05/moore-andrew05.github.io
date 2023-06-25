@@ -1,96 +1,44 @@
 <!DOCTYPE html>
-<html>
+
+<html>  
     <head>
-        <style>
-            .button {
-                border: none;
-                color: white;
-                padding: 48px 48px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 4px;
-                transition-duration: 0.4s;
-                cursor: pointer;
-                border-radius: 25px;
-            }
-            
-            .button1 {
-            background-color: rgba(255, 255, 255, 0);
-            color: black;
-            border: 2px solid #0d756b;
-            }
-
-            .button1:hover {
-            background-color: #20868b6e;
-            color: white;
-            }
-
-            .button2 {
-            background-color: rgba(255, 255, 255, 0);
-            color: black;
-            border: 2px solid #008CBA;
-            }
-
-            .button2:hover {
-            background-color: #008bba7b;
-            color: white;
-            }
-
-            .bg-image {
-                position: absolute;
-                width: 100%;
-                height: auto; /*or 100%*/
-                z-index: -1;
-                padding: 4px 4px;
-                float: left;
-            }
-
-            .bg-image img {
-                width: 100px;
-                height: 100px;
-            }
-
-            .container {
-                position: relative;
-                z-index: 1;
-                top: 0px;
-            }
-
-        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
     </head>
-</html>
-
-
-
-<html>
-  <head>
-    <title>Button Testing</title>
-  </head>
     <body>
-        <div class="bg-image">
-            <img src="./imgs/Linkedin.png" />
+        <section class="header">
+            <nav>
+            </nav>
+        <div class="text-box">
+            <h1>My Links</h1>
+            <br>
+            <a href="https://www.linkedin.com/in/amoore05/" class="app-icon-button linkedin"></a>
+            <a href="https://www.linkedin.com/in/amoore05/" class="app-icon-button git"></a>
+            <a href="" class="app-icon-button astronomy"></a>
+
         </div>
-        <div class="content">
-            <p>
-                <button class="button button1" onclick="window.location.href='https://www.linkedin.com/in/amoore05/';">
         
-                </button>
+        </section>
+<!----Course-->
 
-            </p>
-        </div>
-        <div class="bg-image">
-            <img src="./imgs/Octicons-mark-github.png" />
-        </div>
-        <div class="content">
-            <p>
 
-                <button class="button button2" onclick="window.location.href='https://github.com/moore-andrew05';">
-        
-                </button>
 
-            </p>
-        </div>
+
+<!----JavaScript for menu-->
+        <script>
+            var navLinks = document.getElementById("nav-links");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
     </body>
 </html>
