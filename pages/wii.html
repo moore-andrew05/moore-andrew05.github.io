@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <button id="playButton" class="audio-button">Play</button>
+        <audio id="audio" src="../audio/wii_title.mp3" ></audio>         
+        <div class="photo-gallery">
+            <div class="photo">
+                
+                <img src="../images/golf.png" alt="June 24, 2023, Truly a great day for wii sports golf, 10 under on the way...">
+            </div>
+            <div class="photo">
+                <img src="../images/bowling.png" alt="After many grueling hours, the perfect game is achieved on July 19, 2021.">
+            </div>
+            <!-- Add more photos as needed -->
+        </div>
+    </body>
+        
+
+
+
+
+    <script> 
+        document.getElementById('playButton').addEventListener('click', function() {
+            document.getElementById('audio').play();
+        });
+    </script>
+</html>
