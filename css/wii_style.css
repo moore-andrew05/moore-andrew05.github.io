@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    cursor: url("../images/1618308889_wii-v64/Wii\ -\ Player\ 1.cur"), auto;
+}
+
+body {
+    margin: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../working-images/wii_sports_title_bg_1.png) center center repeat;
+}
+
+.logo-container {
+    visibility: visible;
+    text-align: center;
+    margin-bottom: 20%;
+    max-width: 90%;
+}
+
+.responsive-logo {
+    visibility: visible;
+    width: 50%;  /* Adjust this percentage to fit your needs */
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* For small screens */
+@media only screen and (max-width: 600px) {
+    .responsive-logo {
+        width: 80%;
+    }
+}
+
+/* For medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .responsive-logo {
+        width: 70%;
+    }
+}
+
+/* For large screens */
+@media only screen and (min-width: 1025px) {
+    .responsive-logo {
+        width: 50%;
+    }
+}
+
+.button_cont {
+    position: absolute;
+    display: flex;
+    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageButton {
+    width: 382px;
+    height: 108px;
+    background: transparent;
+    background-image: url('../images/wii_start.png');
+    border: none;   
+}
+
+.imageButton:hover {
+    /* box-shadow: 0px 5px 10px rgba(0,0,0,0.2); */
+    transform: translateY(-5%);
+}
+
+.gallery{
+    width: auto;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    visibility: hidden;
+}
+
+.image{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img{ 
+    object-fit: scale-down;
+    transition: transform .3s;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
